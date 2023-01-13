@@ -1,6 +1,5 @@
 import React from "react";
 import maskBG from "../assets/maskBG.png";
-import "../css/components/Banner.scss";
 
 const Banner = ({ img, text1, text2 }) => {
   return (

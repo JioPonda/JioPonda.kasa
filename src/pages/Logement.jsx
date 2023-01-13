@@ -5,11 +5,11 @@ import Logements from "../data/logements.json";
 import { useParams, Navigate } from "react-router-dom";
 import Tag from "../components/Tag";
 import Rating from "../components/Rating";
-import "../css/pages/Logement.scss";
 
 export default function Logement() {
   document.title = "Kasa - Logement";
   let selectedId = useParams();
+  let logementId;
   let logementTitle;
   let logementPictures;
   let logementDesc;
@@ -21,6 +21,7 @@ export default function Logement() {
 
   Logements.forEach((logement) => {
     if (logement.id === selectedId.id) {
+      logementId = logement.id;
       logementTitle = logement.title;
       logementPictures = logement.pictures;
       logementDesc = logement.description;
@@ -32,7 +33,7 @@ export default function Logement() {
     }
   });
 
-  if (!logementTitle) {
+  if (!logementId) {
     return <Navigate to="/404" />;
   }
 

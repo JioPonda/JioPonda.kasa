@@ -1,9 +1,8 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
-import Properties from "../data/logement";
+import Properties from "../data/logements.json";
 import BGHome from "../assets/banner.jpg";
-import "../css/pages/Home.scss";
 
 export default function Home() {
   document.title = "Kasa - Accueil";

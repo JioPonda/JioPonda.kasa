@@ -1,12 +1,14 @@
-@import "./styles/components/Banner.css";
-@import "./styles/components/Card.css";
-@import "./styles/components/Collaps.css";
-@import "./styles/components/Footer.css";
-@import "./styles/components/Layout.css";
-@import "./styles/components/Navbar.css";
-@import "./styles/components/Slideshow.css";
-@import "./styles/components/Tag.css";
-@import "./styles/pages/About.css";
-@import "./styles/pages/Home.css";
-@import "./styles/pages/Logement.css";
-@import "./styles/pages/NotFound.css";
+@import "./settings";
+@import "./pages/About";
+@import "./pages/Home";
+@import "./pages/Logement";
+@import "./pages/NotFound";
+
+@import "./components/Banner";
+@import "./components/Card";
+@import "./components/Collapse";
+@import "./components/Footer";
+@import "./components/Layout";
+@import "./components/Navbar";
+@import "./components/Slideshow";
+@import "./components/Tag";
